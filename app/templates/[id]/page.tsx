@@ -1,12 +1,14 @@
 "use client"
 
+import { use } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Copy, Download, Star, Eye, Code } from "lucide-react"
 
-export default function TemplateDetailPage({ params }: { params: { id: string } }) {
+export default function TemplateDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params)
   const templateData = {
-    id: params.id,
+    id,
     title: "ERC-20 Token Template",
     description: "A comprehensive ERC-20 token implementation following best practices",
     rating: 4.8,

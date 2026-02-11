@@ -4,32 +4,34 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Modern enterprise design system - deep blacks with vibrant accents */
-  --background: oklch(0.08 0.015 260);
-  --foreground: oklch(0.97 0.01 260);
-  --card: oklch(0.12 0.02 260);
-  --card-foreground: oklch(0.97 0.01 260);
-  --popover: oklch(0.12 0.02 260);
-  --popover-foreground: oklch(0.97 0.01 260);
-  /* Brand palette: blue → indigo → violet */
-  --primary: oklch(0.68 0.22 255);
-  --primary-foreground: oklch(0.98 0.01 260);
-  --secondary: oklch(0.66 0.22 300);
-  --secondary-foreground: oklch(0.08 0.015 260);
-  --muted: oklch(0.25 0.02 260);
-  --muted-foreground: oklch(0.72 0.03 260);
-  --accent: oklch(0.7 0.21 275);
-  --accent-foreground: oklch(0.08 0.015 260);
-  --destructive: oklch(0.65 0.28 25);
-  --destructive-foreground: oklch(0.98 0.01 0);
-  --border: oklch(0.18 0.03 260);
-  --input: oklch(0.14 0.02 260);
+  /* Emerald Green & Black - Clean, Modern, Professional */
+  --background: oklch(0.09 0.01 180);
+  --foreground: oklch(0.98 0.005 180);
+  --card: oklch(0.13 0.015 180);
+  --card-foreground: oklch(0.98 0.005 180);
+  --popover: oklch(0.11 0.012 180);
+  --popover-foreground: oklch(0.98 0.005 180);
+  /* Primary: Vibrant Emerald Green - fresh & energetic */
+  --primary: oklch(0.65 0.2 160);
+  --primary-foreground: oklch(0.09 0.01 180);
+  /* Secondary: Deep Forest Green - sophisticated */
+  --secondary: oklch(0.45 0.12 155);
+  --secondary-foreground: oklch(0.98 0.005 180);
+  --muted: oklch(0.22 0.015 180);
+  --muted-foreground: oklch(0.75 0.01 180);
+  /* Accent: Bright Emerald - highlights & energy */
+  --accent: oklch(0.7 0.22 165);
+  --accent-foreground: oklch(0.09 0.01 180);
+  --destructive: oklch(0.62 0.24 25);
+  --destructive-foreground: oklch(0.98 0.005 0);
+  --border: oklch(0.2 0.02 180);
+  --input: oklch(0.15 0.015 180);
   --ring: var(--primary);
-  --chart-1: var(--primary);
-  --chart-2: var(--accent);
-  --chart-3: var(--secondary);
-  --chart-4: oklch(0.62 0.18 240);
-  --chart-5: oklch(0.72 0.2 320);
+  --chart-1: oklch(0.65 0.2 160);
+  --chart-2: oklch(0.7 0.22 165);
+  --chart-3: oklch(0.6 0.18 140);
+  --chart-4: oklch(0.68 0.2 175);
+  --chart-5: oklch(0.72 0.18 155);
   --radius: 0.75rem;
   --sidebar: var(--background);
   --sidebar-foreground: var(--foreground);
@@ -42,30 +44,30 @@
 }
 
 .dark {
-  --background: oklch(0.08 0.015 260);
-  --foreground: oklch(0.97 0.01 260);
-  --card: oklch(0.12 0.02 260);
-  --card-foreground: oklch(0.97 0.01 260);
-  --popover: oklch(0.12 0.02 260);
-  --popover-foreground: oklch(0.97 0.01 260);
-  --primary: oklch(0.68 0.22 255);
-  --primary-foreground: oklch(0.98 0.01 260);
-  --secondary: oklch(0.66 0.22 300);
-  --secondary-foreground: oklch(0.08 0.015 260);
-  --muted: oklch(0.25 0.02 260);
-  --muted-foreground: oklch(0.72 0.03 260);
-  --accent: oklch(0.7 0.21 275);
-  --accent-foreground: oklch(0.08 0.015 260);
-  --destructive: oklch(0.65 0.28 25);
-  --destructive-foreground: oklch(0.98 0.01 0);
-  --border: oklch(0.18 0.03 260);
-  --input: oklch(0.14 0.02 260);
+  --background: oklch(0.09 0.01 180);
+  --foreground: oklch(0.98 0.005 180);
+  --card: oklch(0.13 0.015 180);
+  --card-foreground: oklch(0.98 0.005 180);
+  --popover: oklch(0.11 0.012 180);
+  --popover-foreground: oklch(0.98 0.005 180);
+  --primary: oklch(0.65 0.2 160);
+  --primary-foreground: oklch(0.09 0.01 180);
+  --secondary: oklch(0.45 0.12 155);
+  --secondary-foreground: oklch(0.98 0.005 180);
+  --muted: oklch(0.22 0.015 180);
+  --muted-foreground: oklch(0.75 0.01 180);
+  --accent: oklch(0.7 0.22 165);
+  --accent-foreground: oklch(0.09 0.01 180);
+  --destructive: oklch(0.62 0.24 25);
+  --destructive-foreground: oklch(0.98 0.005 0);
+  --border: oklch(0.2 0.02 180);
+  --input: oklch(0.15 0.015 180);
   --ring: var(--primary);
-  --chart-1: var(--primary);
-  --chart-2: var(--accent);
-  --chart-3: var(--secondary);
-  --chart-4: oklch(0.62 0.18 240);
-  --chart-5: oklch(0.72 0.2 320);
+  --chart-1: oklch(0.65 0.2 160);
+  --chart-2: oklch(0.7 0.22 165);
+  --chart-3: oklch(0.6 0.18 140);
+  --chart-4: oklch(0.68 0.2 175);
+  --chart-5: oklch(0.72 0.18 155);
   --sidebar: var(--background);
   --sidebar-foreground: var(--foreground);
   --sidebar-primary: var(--primary);
@@ -124,7 +126,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(135deg, oklch(0.08 0.01 260) 0%, oklch(0.1 0.02 280) 100%);
+    background: linear-gradient(135deg, oklch(0.09 0.01 180) 0%, oklch(0.11 0.015 170) 50%, oklch(0.1 0.012 165) 100%);
   }
 
   @keyframes fade-in {
@@ -184,10 +186,10 @@
   @keyframes glow {
     0%,
     100% {
-      box-shadow: 0 0 20px rgba(100, 150, 255, 0.3);
+      box-shadow: 0 0 20px rgba(80, 200, 120, 0.5);
     }
     50% {
-      box-shadow: 0 0 40px rgba(100, 150, 255, 0.6);
+      box-shadow: 0 0 40px rgba(80, 200, 120, 0.8), 0 0 60px rgba(100, 220, 140, 0.4);
     }
   }
 }
@@ -195,6 +197,52 @@
 @layer components {
   .gradient-text {
     @apply bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+
+  .glass-input {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+    padding: 0.625rem 1rem;
+    color: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .glass-input:focus {
+    border-color: var(--primary);
+  }
+
+  .glass-button {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .glass-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.25);
   }
 
   .smooth-fade {
@@ -207,9 +255,9 @@
 
   /* Removed problematic custom component classes from the layer to prevent JIT compiler conflicts */
   .nav-blur {
-    background: linear-gradient(to bottom, rgba(20, 25, 60, 0.95), rgba(15, 20, 50, 0.85));
-    border-bottom: 1px solid rgba(100, 150, 255, 0.2);
-    backdrop-filter: none;
+    background: linear-gradient(to bottom, rgba(10, 15, 15, 0.95), rgba(8, 12, 12, 0.92));
+    border-bottom: 1px solid rgba(80, 200, 120, 0.3);
+    backdrop-filter: blur(12px);
   }
 
   .animate-fade-in {

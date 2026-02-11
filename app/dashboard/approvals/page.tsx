@@ -38,13 +38,13 @@ export default function ApprovalsPage() {
     },
   ])
 
-  const [selectedReview, setSelectedReview] = useState(null)
+  const [selectedReview, setSelectedReview] = useState<number | null>(null)
 
-  const handleApprove = (id) => {
+  const handleApprove = (id: number) => {
     setPendingReviews(pendingReviews.filter((r) => r.id !== id))
   }
 
-  const handleReject = (id) => {
+  const handleReject = (id: number) => {
     setPendingReviews(pendingReviews.filter((r) => r.id !== id))
   }
 
@@ -55,14 +55,14 @@ export default function ApprovalsPage() {
     { label: "Avg. Review Time", value: "2.4 hrs", icon: "🕐", color: "blue" },
   ]
 
-  const colorMap = {
+  const colorMap: Record<string, string> = {
     yellow: "from-yellow-500 to-orange-500",
     green: "from-green-500 to-emerald-500",
     red: "from-red-500 to-red-400",
     blue: "from-blue-500 to-cyan-500",
   }
 
-  const priorityColor = {
+  const priorityColor: Record<string, string> = {
     high: "from-red-500 to-orange-500",
     medium: "from-yellow-500 to-orange-500",
     low: "from-green-500 to-emerald-500",

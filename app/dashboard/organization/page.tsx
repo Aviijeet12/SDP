@@ -47,7 +47,7 @@ export default function OrganizationPage() {
     }
   }
 
-  const handleRemoveMember = (id) => {
+  const handleRemoveMember = (id: number) => {
     setMembers(members.filter((m) => m.id !== id))
   }
 

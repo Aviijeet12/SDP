@@ -54,7 +54,7 @@ export default function SecurityCheckerPage() {
     low: { bg: "bg-blue-500", text: "text-blue-400", border: "border-blue-500" },
   }
 
-  const riskIcon = {
+  const riskIcon: Record<string, typeof AlertCircle> = {
     critical: AlertCircle,
     high: AlertTriangle,
     medium: AlertTriangle,
@@ -146,12 +146,12 @@ export default function SecurityCheckerPage() {
                           <div
                             className="w-2 h-2 rounded-full"
                             style={{
-                              backgroundColor: {
+                              backgroundColor: ({
                                 critical: "#f87171",
                                 high: "#fb923c",
                                 medium: "#facc15",
                                 low: "#60a5fa",
-                              }[issue.level],
+                              } as Record<string, string>)[issue.level],
                             }}
                           />
                           <span className="capitalize">{issue.level}</span>
@@ -186,12 +186,12 @@ export default function SecurityCheckerPage() {
                       key={idx}
                       className="rounded-lg p-6 border-l-4 transition-all hover:shadow-lg border border-white/10 bg-white/5"
                       style={{
-                        borderLeftColor: {
+                        borderLeftColor: ({
                           critical: "#f87171",
                           high: "#fb923c",
                           medium: "#facc15",
                           low: "#60a5fa",
-                        }[issue.level],
+                        } as Record<string, string>)[issue.level],
                       }}
                     >
                       <div className="flex items-start gap-4">
@@ -202,12 +202,12 @@ export default function SecurityCheckerPage() {
                             <span
                               className={`text-xs font-bold px-2 py-1 rounded text-white`}
                               style={{
-                                backgroundColor: {
+                                backgroundColor: ({
                                   critical: "#dc2626",
                                   high: "#ea580c",
                                   medium: "#ca8a04",
                                   low: "#2563eb",
-                                }[issue.level],
+                                } as Record<string, string>)[issue.level],
                               }}
                             >
                               {issue.level.toUpperCase()}

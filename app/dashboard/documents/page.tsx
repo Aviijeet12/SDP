@@ -68,7 +68,7 @@ export default function DocumentsPage() {
   ])
 
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [expandedDoc, setExpandedDoc] = useState(null)
+  const [expandedDoc, setExpandedDoc] = useState<number | null>(null)
 
   const stats = [
     { label: "Total Documents", value: 24, icon: "📄", bgGradient: "from-blue-500 to-cyan-500" },
